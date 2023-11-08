@@ -1,0 +1,49 @@
+/* MyPage.css */
+
+.my_page {
+  display: flex;
+  text-align: center;
+  padding: 20px;
+  flex-direction: column;
+  height: 100%;
+}
+
+.user_info_box {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.user_info img {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin-right: 20px;
+  background-color: black;
+}
+
+.user_info_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.user_info_name {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.user_info_h1 {
+  margin-bottom: 10px;
+}

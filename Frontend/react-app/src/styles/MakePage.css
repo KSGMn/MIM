@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+}
+
+.container1 {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.image_box {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.file_btn {
+  margin-top: 20px;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  height: 10%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 40%;
+  transition: border-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.desc {
+  resize: none;
+  height: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 40%;
+  transition: border-color 0.3s;
+}
+
+.title::placeholder,
+.desc::placeholder {
+  color: #aaa; /* 플레이스홀더 텍스트 색상 설정 */
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.container3 {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.add_Btn {
+  width: 40%;
+  background-color: #333; /* 배경색 설정 */
+  color: #fff; /* 텍스트 색상 설정 */
+  border: none; /* 테두리 제거 */
+  border-radius: 5px; /* 버튼 테두리 둥글게 만들기 */
+  padding: 10px 20px; /* 내부 여백 설정 */
+  font-size: 16px; /* 폰트 크기 설정 */
+  cursor: pointer; /* 커서 스타일 설정 */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.add_Btn:hover {
+  color: #ff5733;
+}
+
+.add_Btn:active {
+  background-color: #2474a6; /* 클릭 시 배경색 변경 */
+}

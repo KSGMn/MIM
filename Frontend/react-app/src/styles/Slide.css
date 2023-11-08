@@ -1,0 +1,68 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* padding: 0 10px; */
+  box-sizing: border-box;
+}
+
+.active {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+/* .slide {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.slide.active {
+  opacity: 1;
+  height: 100%;
+  width: auto;
+}
+
+.slide img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+  transform: translateY(-50%);
+  opacity: 0; /* 기본적으로 버튼을 투명하게 설정 */
+  transition: opacity 0.5s; /* 투명도 변경 시 부드럽게 효과 적용 */
+}
+
+.slider-container:hover .slider-button {
+  opacity: 1; /* 마우스를 올렸을 때 버튼을 완전히 불투명하게 만듭니다 */
+}
+
+.slider-button.left {
+  left: 10px; /* 이미지 왼쪽 바깥에 버튼 배치 */
+}
+
+.slider-button.right {
+  right: 10px; /* 이미지 오른쪽 바깥에 버튼 배치 */
+}
